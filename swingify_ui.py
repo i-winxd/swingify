@@ -35,4 +35,4 @@ if __name__ == '__main__':
                                   custom_check=sf_validate
                                   )
     ts = swing_ify(ps.input, ps.bpm)
-    ts.export(ps.output, format=ps.output.suffix.removeprefix("."))
+    ts.export(ps.output, format=ps.output.suffix.removeprefix(".").lower())
