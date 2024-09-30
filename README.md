@@ -9,6 +9,8 @@
 
 ## Download and installation
 
+**you must have ffmpeg installed**
+
 This is bundled in a single executable, which you can find in the releases tab (look out for the green `latest`, **literally** the first image when you search up `github releases` on Google tells you where it is).
 
 Run the executable to launch up the GUI.
