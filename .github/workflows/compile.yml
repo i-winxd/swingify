@@ -31,12 +31,6 @@ jobs:
         if: runner.os == 'Linux'
         run: pyinstaller ${{ env.ENTRY_POINT }} --onefile --name ${{github.event.repository.name}}-linux
 
-      - name: Include to dist, MacOS/Linux
-        if: runner.os != 'Windows'
-        run: mv settings.json dist/settings.json
-      - name: Include to dist, Windows only
-        if: runner.os == 'Windows'
-        run: move settings.json dist\settings.json
 
       - name: MacOS zip folder
         if: runner.os == 'macOS'
